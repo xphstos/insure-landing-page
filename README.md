@@ -6,4 +6,4 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: [You're here](https://github.com/xphstos/insure-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://edb73a2c7e86e008159cb097e855f83cab48ad16.surge.sh](https://edb73a2c7e86e008159cb097e855f83cab48ad16.surge.sh/)
