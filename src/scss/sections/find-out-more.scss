@@ -1,0 +1,29 @@
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+
+.section--find-out-more {
+  .section__header {
+    background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat
+        right top / auto 100%,
+      var(--off-black);
+    padding: 5rem fluid-rem(2.25rem, 5rem);
+    display: grid;
+    grid-template-columns: auto min-content;
+    align-items: center;
+    gap: 3rem;
+
+    @media (width <= 960px) {
+      background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat
+          right top / auto 100%,
+        var(--off-black);
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .section__title {
+    font-size: fluid-rem(2.5rem, 3.375rem);
+    max-width: 18ch;
+  }
+}

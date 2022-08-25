@@ -1,0 +1,67 @@
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+
+.header {
+  @extend %container;
+  --padding-block: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: v("white");
+
+  @media (width <= 960px) {
+    --container: 1110px;
+  }
+}
+
+.homelink {
+  flex: 0 0 6.5rem;
+
+  span {
+    @extend %sr-only;
+  }
+
+  &__logo {
+    width: 6.5rem;
+    height: auto;
+  }
+}
+
+.menu-toggle {
+  @include size(2rem);
+  border: none;
+  background: none;
+  padding: 0;
+  display: inline-grid;
+  cursor: pointer;
+
+  span {
+    @extend %sr-only;
+  }
+
+  @media (width > 960px) {
+    display: none;
+  }
+
+  &__icon {
+    grid-area: 1 / 1;
+
+    &--burger {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    &--close {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(20%);
+    }
+  }
+}

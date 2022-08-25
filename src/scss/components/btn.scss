@@ -1,0 +1,29 @@
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+
+.btn {
+  --color: var(--white);
+  --hover: var(--off-black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid v("color");
+  background: transparent;
+  color: v("color");
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  height: 2.5rem;
+  line-height: 1;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:focus,
+  &:hover {
+    background-color: v("color");
+    color: v("off-black");
+  }
+}

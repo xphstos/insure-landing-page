@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Insure landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.scss" />
+  </head>
+  <body>
+    <include src="partials/header.html"></include>
+    <main class="main">
+      <section class="section section--intro">
+        <header class="section__header">
+          <h1 class="section__title">Humanizing your insurance.</h1>
+          <p class="section__description">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <a href="#" class="section__cta btn">View plans</a>
+        </header>
+        <figure class="section__image">
+          <picture>
+            <source
+              srcset="./images/image-intro-mobile.jpg"
+              media="(max-width: 960px)"
+            />
+            <img
+              src="./images/image-intro-desktop.jpg"
+              alt="family holding hands"
+            />
+          </picture>
+        </figure>
+        <picture
+          class="section__decoration section__decoration--right"
+          role="presentation"
+        >
+          <source
+            srcset="./images/bg-pattern-intro-right-mobile.svg"
+            media="(max-width: 475px)"
+          />
+          <img src="./images/bg-pattern-intro-right-desktop.svg" alt="" />
+        </picture>
+        <picture
+          class="section__decoration section__decoration--left"
+          role="presentation"
+        >
+          <source
+            srcset="./images/bg-pattern-intro-left-mobile.svg"
+            media="(max-width: 475px)"
+          />
+          <img src="./images/bg-pattern-intro-left-desktop.svg" alt="" />
+        </picture>
+      </section>
+      <section class="section section--we-are-different">
+        <header class="section__header">
+          <h2 class="section__title">We’re different</h2>
+        </header>
+        <ul class="differencies">
+          <include
+            src="partials/differency.html"
+            locals='{
+            "icon": "images/icon-snappy-process.svg",
+            "title": "Snappy Process",
+            "text": "Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms."
+          }'
+          ></include>
+          <include
+            src="partials/differency.html"
+            locals='{
+            "icon": "images/icon-affordable-prices.svg",
+            "title": "Affordable Prices",
+            "text": "We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible."
+          }'
+          ></include>
+          <include
+            src="partials/differency.html"
+            locals='{
+            "icon": "images/icon-people-first.svg",
+            "title": "People First",
+            "text": "Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it."
+          }'
+          ></include>
+        </ul>
+      </section>
+      <section class="section section--find-out-more">
+        <header class="section__header">
+          <h2 class="section__title">Find out more about how we work</h2>
+          <a href="#" class="section__cta btn">How we work</a>
+        </header>
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

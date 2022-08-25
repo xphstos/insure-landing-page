@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-size-adjust: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font: 400 1rem / 1.6 "Karla", sans-serif;
+  color: var(--off-black);
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+::selection {
+  background-color: var(--blue-light);
+  color: var(--off-black);
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: "DM Serif Display", serif;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+menu,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+svg {
+  vertical-align: middle;
+}

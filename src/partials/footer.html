@@ -1,0 +1,110 @@
+<footer class="footer">
+  <div class="footer__top">
+    <a href="/" class="homelink">
+      <icon
+        src="images/logo.svg"
+        class="homelink__logo"
+        role="presentation"
+      ></icon>
+      <span>insure homelink</span>
+    </a>
+    <ul class="social">
+      <include
+        src="partials/social-link.html"
+        locals='{
+          "icon": "images/icon-facebook.svg",
+          "url": "#",
+          "label": "facebook"
+        }'
+      ></include>
+      <include
+        src="partials/social-link.html"
+        locals='{
+          "icon": "images/icon-twitter.svg",
+          "url": "#",
+          "label": "twitter"
+        }'
+      ></include>
+      <include
+        src="partials/social-link.html"
+        locals='{
+          "icon": "images/icon-pinterest.svg",
+          "url": "#",
+          "label": "pinterest"
+        }'
+      ></include>
+      <include
+        src="partials/social-link.html"
+        locals='{
+          "icon": "images/icon-instagram.svg",
+          "url": "#",
+          "label": "instagram"
+        }'
+      ></include>
+    </ul>
+  </div>
+  <nav class="nav" aria-label="footer-nav">
+    <div class="nav__column">
+      <h4 class="nav__header" id="company">Our company</h4>
+      <menu class="menu" aria-labelledby="company">
+        <li class="menu__item">
+          <a href="#" class="menu__link">How we work</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Why Insure?</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">View plans</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Reviews</a>
+        </li>
+      </menu>
+    </div>
+    <div class="nav__column">
+      <h4 class="nav__header" id="help">Help me</h4>
+      <menu class="menu" aria-labelledby="help">
+        <li class="menu__item">
+          <a href="#" class="menu__link">FAQ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Terms of use</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Privacy policy</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Cookies</a>
+        </li>
+      </menu>
+    </div>
+    <div class="nav__column">
+      <h4 class="nav__header" id="contact">Contact</h4>
+      <menu class="menu" aria-labelledby="contact">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Sales</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Support</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Live chat</a>
+        </li>
+      </menu>
+    </div>
+    <div class="nav__column">
+      <h4 class="nav__header" id="others">Others</h4>
+      <menu class="menu" aria-labelledby="others">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Careers</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Press</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Licenses</a>
+        </li>
+      </menu>
+    </div>
+  </nav>
+</footer>

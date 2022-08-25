@@ -1,0 +1,45 @@
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+
+.section--we-are-different {
+  .section__title {
+    --color: var(--off-black);
+
+    &::before {
+      content: "";
+      display: block;
+      margin-bottom: 1em;
+      width: 9.375rem;
+      height: 1px;
+      background-color: v("off-black");
+
+      @media (width <= 960px) {
+        margin-inline: auto;
+      }
+    }
+  }
+}
+
+.differencies {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 3rem;
+}
+
+.differency {
+  &__icon {
+    @include size(5rem);
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    letter-spacing: 0.01em;
+    margin-block: 2.5rem 1.5rem;
+  }
+
+  &__text {
+    color: v("grey-dark");
+  }
+}
