@@ -1,7 +1,7 @@
 import { gsap, Power2 } from "gsap";
 
 export const navAnim = gsap
-  .timeline({ paused: true, defaults: { clearProps: "all" } })
+  .timeline({ paused: true })
   .to('[aria-label="header-nav"]', {
     pointerEvents: "auto",
     visibility: "visible",
@@ -27,20 +27,3 @@ export const menuToggleAnim = gsap
     { visibility: "visible", y: 0, opacity: 1 },
     0
   );
-
-// export const introAnim = gsap
-//   .timeline({ paused: true })
-//   .fromTo(
-//     ".section--intro .section__image",
-//     { clipPath: "inset(0% 0% 100% 0%)" },
-//     {
-//       clipPath: "inset(0% 0% 0% 0%)",
-//       ease: Power2.easeInOut,
-//       duration: 1,
-//       clearProps: "all",
-//     }
-//   )
-//   .to(".section--intro .section__decoration", {
-//     opacity: 1,
-//     ease: Power2.easeInOut,
-//   });

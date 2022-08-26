@@ -100,20 +100,22 @@
 
         &:last-child {
           .menu__link {
-            @media (width > 960px) {
-              --color: var(--off-black);
-              --hover: var(--off-black);
-
-              &:focus,
-              &:hover {
-                --hover: var(--white);
-                color: v("white");
-              }
-            }
+            --color: var(--off-black);
+            --hover: var(--off-black);
 
             &:focus,
             &:hover {
-              color: v("off-black");
+              color: v("white");
+            }
+
+            @media (width <= 960px) {
+              --color: var(--white);
+              --hover: var(--white);
+
+              &:focus,
+              &:hover {
+                color: v("off-black");
+              }
             }
           }
         }
